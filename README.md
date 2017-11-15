@@ -1,7 +1,7 @@
 About regolith
 ==============
 
-Home: http://scopatz.github.io/regolith-docs/
+Home: http://regro.github.io/regolith-docs/
 
 Package license: CC0
 
