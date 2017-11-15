@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/scopatz/{{ name }}/archive/{{ version }}.tar.gz
+  url: https://github.com/regro/{{ name }}/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -32,12 +32,13 @@ test:
     - regolith
 
 about:
-  home: http://scopatz.github.io/regolith-docs/
+  home: http://regro.github.io/regolith-docs/
   license: CC0
   license_file: LICENSE
   summary: 'Research Group Content Managment System'
-  dev_url: https://github.com/scopatz/regolith
+  dev_url: https://github.com/regro/regolith
 
 extra:
   recipe-maintainers:
     - scopatz
+    - CJ-Wright
