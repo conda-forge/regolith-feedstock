@@ -13,15 +13,15 @@ source:
 
 build:
   number: 0
-  noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
+  skip: True  # [py2k]
 
 requirements:
   build:
-    - python >=3.5
+    - python 
     - setuptools
   run:
-    - python >=3.5
+    - python
     - flask
     - jinja2
     - docutils
