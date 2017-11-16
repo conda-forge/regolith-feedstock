@@ -1,6 +1,6 @@
 {% set name = "regolith" %}
-{% set version = "0.1.3" %}
-{% set sha256 = "dfce117cddc743eea4be248fe1d213c96c761f99d6f66d0aa492a1492561fdd4" %}
+{% set version = "0.1.4" %}
+{% set sha256 = "7b248fb922f884f22ae0bff8e7c8b75f25792e89e0df461711f06b6bfecbd22a" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/scopatz/{{ name }}/archive/{{ version }}.tar.gz
+  url: https://github.com/regro/{{ name }}/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -18,7 +18,7 @@ build:
 
 requirements:
   build:
-    - python
+    - python 
     - setuptools
   run:
     - python
@@ -32,12 +32,13 @@ test:
     - regolith
 
 about:
-  home: http://scopatz.github.io/regolith-docs/
+  home: http://regro.github.io/regolith-docs/
   license: CC0
   license_file: LICENSE
   summary: 'Research Group Content Managment System'
-  dev_url: https://github.com/scopatz/regolith
+  dev_url: https://github.com/regro/regolith
 
 extra:
   recipe-maintainers:
     - scopatz
+    - CJ-Wright
