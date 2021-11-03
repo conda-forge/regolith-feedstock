@@ -1,6 +1,6 @@
 {% set name = "regolith" %}
-{% set version = "0.5.1" %}
-{% set sha256 = "bd1f71702f7dde939c0850e85a6545886ef4bd7ddb9c6334954d94fc48d7fc21" %}
+{% set version = "0.6.0" %}
+{% set sha256 = "6b56a51d4d717b859d917727f200f7b5743da029093c5141eb7c68ffbbbb4e68" %}
 
 package:
   name: {{ name|lower }}
@@ -13,11 +13,11 @@ source:
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
-  build:
+  host:
     - python >=3.5
     - pip
     - xonsh
@@ -45,7 +45,7 @@ about:
   home: http://scopatz.github.io/regolith-docs/
   license: CC0
   license_file: LICENSE
-  summary: 'Research Group Content Managment System'
+  summary: Research Group Content Managment System
   dev_url: https://github.com/scopatz/regolith
 
 extra:
