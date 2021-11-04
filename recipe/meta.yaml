@@ -1,6 +1,6 @@
 {% set name = "regolith" %}
-{% set version = "0.5.1" %}
-{% set sha256 = "bd1f71702f7dde939c0850e85a6545886ef4bd7ddb9c6334954d94fc48d7fc21" %}
+{% set version = "0.6.2" %}
+{% set sha256 = "231afb1894f876ef22bdd99de41abee0f0736420a5075edac97a3fd3d561d95b" %}
 
 package:
   name: {{ name|lower }}
