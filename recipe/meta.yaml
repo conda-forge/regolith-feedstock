@@ -1,6 +1,6 @@
 {% set name = "regolith" %}
-{% set version = "0.5.1" %}
-{% set sha256 = "bd1f71702f7dde939c0850e85a6545886ef4bd7ddb9c6334954d94fc48d7fc21" %}
+{% set version = "0.7.2" %}
+{% set sha256 = "03cbb15c16c58bf7548c527cba51824fc045971039197feb644f6ec9ea546b0d" %}
 
 package:
   name: {{ name|lower }}
@@ -17,21 +17,33 @@ build:
   noarch: python
 
 requirements:
-  build:
+  host:
     - python >=3.5
     - pip
     - xonsh
   run:
     - python >=3.5
-    - flask
-    - jinja2
-    - docutils
+    - autovizwidget
     - bibtexparser
-    - ruamel.yaml
     - cerberus
-    - xonsh
-    - openpyxl
+    - docutils
+    - flask
+    - gooey
+    - google-api-python-client
+    - google-auth-oauthlib
+    - habanero
+    - jinja2
+    - matplotlib-base
     - nameparser
+    - numpy
+    - openpyxl
+    - pandas
+    - pymongo
+    - python-dateutil
+    - requests
+    - rever
+    - ruamel.yaml
+    - xonsh
 
 test:
   commands:
