@@ -17,21 +17,33 @@ build:
   noarch: python
 
 requirements:
-  build:
+  host:
     - python >=3.5
     - pip
     - xonsh
   run:
     - python >=3.5
-    - flask
-    - jinja2
-    - docutils
+    - autovizwidget
     - bibtexparser
-    - ruamel.yaml
     - cerberus
-    - xonsh
-    - openpyxl
+    - docutils
+    - flask
+    - gooey
+    - google-api-python-client
+    - google-auth-oauthlib
+    - habanero
+    - jinja2
+    - matplotlib-base
     - nameparser
+    - numpy
+    - openpyxl
+    - pandas
+    - pymongo
+    - python-dateutil
+    - requests
+    - rever
+    - ruamel.yaml
+    - xonsh
 
 test:
   commands:
