@@ -5,7 +5,7 @@ Home: http://scopatz.github.io/regolith-docs/
 
 Package license: CC0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/regolith-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/regolith-feedstock/blob/main/LICENSE.txt)
 
 Summary: Research Group Content Managment System
 
@@ -17,8 +17,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3512&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/regolith-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3512&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/regolith-feedstock?branchName=main">
       </a>
     </td>
   </tr>
