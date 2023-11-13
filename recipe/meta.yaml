@@ -1,6 +1,6 @@
 {% set name = "regolith" %}
-{% set version = "0.7.2" %}
-{% set sha256 = "03cbb15c16c58bf7548c527cba51824fc045971039197feb644f6ec9ea546b0d" %}
+{% set version = "0.8.2" %}
+{% set sha256 = "e3f82cbe3d42faa354de901f90ea4026315ad0f1e775cc889f2e42c1f4ad479a" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
   noarch: python
 
