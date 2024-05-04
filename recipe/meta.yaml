@@ -28,7 +28,7 @@ requirements:
     - cerberus
     - docutils
     - flask
-    - flatten-idct
+    - flatten-dict
     - gooey
     - google-api-python-client
     - google-auth-oauthlib
