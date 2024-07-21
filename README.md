@@ -3,13 +3,18 @@ About regolith-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/regolith-feedstock/blob/main/LICENSE.txt)
 
-Home: http://scopatz.github.io/regolith-docs/
+Home: https://github.com/regro/regolith/
 
-Package license: CC0
+Package license: CC0-1.0
 
-Summary: Research Group Content Managment System
+Summary: A Research Group Content Management System
 
-Development: https://github.com/scopatz/regolith
+Development: https://github.com/regro/regolith/
+
+Documentation: http://regro.github.io/regolith/
+
+Keep all your info in databases and build reports such as cv, publication list and so on.
+
 
 Current build status
 ====================
@@ -145,7 +150,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@CJ-Wright](https://github.com/CJ-Wright/)
 * [@sbillinge](https://github.com/sbillinge/)
-* [@scopatz](https://github.com/scopatz/)
 
