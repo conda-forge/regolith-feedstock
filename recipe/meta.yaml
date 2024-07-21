@@ -1,67 +1,75 @@
-{% set name = "regolith" %}
-{% set version = "0.7.2" %}
-{% set sha256 = "03cbb15c16c58bf7548c527cba51824fc045971039197feb644f6ec9ea546b0d" %}
+{%- set name = "regolith" -%}
+{%- set version = "0.9.1" -%}
+{%- set sha256 = "6e1a535e8dea50ec4f17a76b66fb0d66d70a0e88728c77ed0f684d92abf3283f" -%}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/scopatz/{{ name }}/releases/download/{{ version }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/r/regolith/regolith-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  preserve_egg_dir: true
   noarch: python
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.10
+    - setuptools
     - pip
-    - xonsh
+
   run:
-    - python >=3.5
-    - autovizwidget
+    - python >=3.10
+    - setuptools
+    - ruamel.yaml
     - bibtexparser
-    - cerberus
     - docutils
-    - flask
-    - gooey
-    - google-api-python-client
-    - google-auth-oauthlib
-    - habanero
+    - python-dateutil
     - jinja2
-    - matplotlib-base
-    - nameparser
-    - numpy
+    - cerberus
+    - flatten-dict
+    - xonsh
+    - rever
     - openpyxl
+    - nameparser
     - pandas
     - pymongo
-    - python-dateutil
-    - requests
-    - rever
-    - ruamel.yaml
-    - xonsh
+    - matplotlib-base
+    - habanero
+    - google-api-python-client
+    - goole-auth-oauthlib
+    - wxpython
+    - gooey
 
 test:
-  commands:
-    - regolith -h
-    - regolith build -h
-    - regolith validate -h
   imports:
     - regolith
 
+  requires:
+    - flake8
+    - mock
+    - pytest
+    - requests-mock
+    - pytest-mock
+    - pytest-env
+    - coverage
+    - codecov
+
 about:
-  home: http://scopatz.github.io/regolith-docs/
-  license: CC0
-  license_file: LICENSE
-  summary: 'Research Group Content Managment System'
-  dev_url: https://github.com/scopatz/regolith
+  home: https://github.com/regro/regolith/
+  summary: A Group Content Management System
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE.rst
+  description: |
+    Keep all your info in databases and build reports such as cv, publication list and so on.
+  doc_url: http://regro.github.io/regolith/
+  dev_url: https://github.com/regro/regolith/
 
 extra:
   recipe-maintainers:
-    - scopatz
-    - CJ-Wright
     - sbillinge
