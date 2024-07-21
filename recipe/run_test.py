@@ -7,7 +7,7 @@ from pathlib import Path
 import pytest
 
 if __name__ == "__main__":
-    package_directory = '{{ cookiecutter.module_name }}'
+    package_directory = 'regolith'
     module = importlib.import_module(package_directory)
     module_path = Path(module.__file__).parent
     test_location = module_path / 'tests'
