@@ -41,7 +41,7 @@ requirements:
     - matplotlib-base
     - habanero
     - google-api-python-client
-    - goole-auth-oauthlib
+    - google-auth-oauthlib
     - wxpython
     - gooey
 
