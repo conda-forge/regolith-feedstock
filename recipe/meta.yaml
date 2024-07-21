@@ -61,9 +61,8 @@ test:
 
 about:
   home: https://github.com/regro/regolith/
-  summary: A Group Content Management System
-  license: BSD-3-Clause
-  license_family: BSD
+  summary: A Research Group Content Management System
+  license: 'CC0-1.0'
   license_file: LICENSE.rst
   description: |
     Keep all your info in databases and build reports such as cv, publication list and so on.
