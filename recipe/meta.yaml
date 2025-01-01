@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {%- set name = "regolith" -%}
 {%- set version = "0.9.1" -%}
 {%- set sha256 = "6e1a535e8dea50ec4f17a76b66fb0d66d70a0e88728c77ed0f684d92abf3283f" -%}
@@ -7,23 +8,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/r/regolith/regolith-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/r/regolith/regolith-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   preserve_egg_dir: true
   noarch: python
-  number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - setuptools
     - pip
 
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - setuptools
     - ruamel.yaml
     - bibtexparser
@@ -58,6 +59,7 @@ test:
     - pytest-env
     - coverage
     - codecov
+    - python {{ python_min }}
 
 about:
   home: https://github.com/regro/regolith/
