@@ -1,7 +1,7 @@
 {% set python_min = '3.12' %}
-{%- set name = "regolith" -%}
-{%- set version = "0.10.0" -%}
-{%- set sha256 = "10028e32f00b18fb3790ca9ad74e7a9517e58f83cddb862f929a0251f1e2687c" -%}
+{% set name = "regolith" %}
+{% set version = "0.10.0" %}
+{% set sha256 = "10028e32f00b18fb3790ca9ad74e7a9517e58f83cddb862f929a0251f1e2687c" %}
 
 package:
   name: {{ name|lower }}
