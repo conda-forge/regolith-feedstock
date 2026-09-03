@@ -1,14 +1,14 @@
-{% set python_min = '3.12' %}
+{% set python_min = "3.12" %}
 {% set name = "regolith" %}
-{% set version = "0.10.0" %}
-{% set sha256 = "10028e32f00b18fb3790ca9ad74e7a9517e58f83cddb862f929a0251f1e2687c" %}
+{% set version = "0.10.1" %}
+{% set sha256 = "938b515524b954e2acaba58ff06515d2dc40653ae0f87434d606b11e42c88d23" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/r/regolith/regolith-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/r/regolith/regolith-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -36,6 +36,7 @@ requirements:
     - xonsh
     - rever
     - openpyxl
+    - pypdf
     - nameparser
     - pandas
     - pymongo
